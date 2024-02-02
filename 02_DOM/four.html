@@ -13,7 +13,7 @@
 </body>
 <script>
     function addLanguage(langName){
-        const li = document.createElement('li');
+        const li = document.createElement('li');               //not optimised
         li.innerHTML = `${langName}`
         document.querySelector('.language').appendChild(li)
     }
@@ -22,7 +22,7 @@
 
     function addOptiLanguage(langName){
         const li = document.createElement('li');
-        li.appendChild(document.createTextNode(langName))
+        li.appendChild(document.createTextNode(langName))         //optimised approach
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
